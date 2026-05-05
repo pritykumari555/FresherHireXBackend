@@ -21,10 +21,11 @@ const codeRoutes = require("./routes/code");
 
 // Middleware
 app.use(cors({
-  origin: "https://fresher-hire-x.vercel.app",
+  origin: "*",
   methods: ["GET", "POST", "PUT", "DELETE"],
-  credentials: true
-}));app.use(express.json());
+  credentials: false
+}));
+app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // DB CONNECTION (FIXED)
