@@ -1,5 +1,9 @@
 
-require("dotenv").config(); // ⭐ MUST BE FIRST LINE
+ // ⭐ MUST BE FIRST LINE
+ // ✅ Only use dotenv locally, not on Render
+if (process.env.NODE_ENV !== "production") {
+  require("dotenv").config();
+}
 
 
 
