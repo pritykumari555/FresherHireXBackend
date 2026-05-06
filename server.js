@@ -1,9 +1,8 @@
 
  // ⭐ MUST BE FIRST LINE
  // ✅ Only use dotenv locally, not on Render
-if (process.env.NODE_ENV !== "production") {
-  require("dotenv").config();
-}
+// ✅ Replace existing dotenv lines with this
+require("dotenv").config({ path: "/etc/secrets/.env" });
 
 
 
