@@ -2,8 +2,8 @@
  // ⭐ MUST BE FIRST LINE
  // ✅ Only use dotenv locally, not on Render
 // ✅ Replace existing dotenv lines with this
-require("dotenv").config({ path: "/etc/secrets/.env" });
-
+const dotenv = require("dotenv");
+dotenv.config();
 
 
 const express = require("express");
